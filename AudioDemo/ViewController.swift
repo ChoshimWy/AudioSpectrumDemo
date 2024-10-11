@@ -39,11 +39,11 @@ class ViewController: UIViewController {
         playBtn.layer.masksToBounds = true
         
         spectrumView = SpectrumView(frame: CGRect(x: (view.bounds.size.width - 300) / 2, y: playBtn.frame.maxY, width: 300, height: 300))
-        spectrumView.backgroundColor = .white
+//        spectrumView.backgroundColor = .white
         view.addSubview(spectrumView)
         
         waveformView = WaveformView(frame: CGRect(x: 0, y: spectrumView.frame.maxY, width: view.bounds.size.width, height: 100))
-        waveformView.backgroundColor = .black
+//        waveformView.backgroundColor = .black
         view.addSubview(waveformView)
     }
         

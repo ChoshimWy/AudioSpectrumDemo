@@ -8,7 +8,7 @@ target 'AudioDemo' do
 
   # Pods for AudioDemo
 
-  pod 'AudioKit'
+  pod 'AudioKit/Core'
   
 end
 
