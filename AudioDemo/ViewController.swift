@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var spectrumView: SpectrumView!
     var waveformView: WaveformView!
     let numberOfBars: Int = 128
-    // 平滑处理变量
+    /// 平滑处理变量
     var smoothedMagnitudes: [Float] = []
         
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         startAudio()
     }
 
-    // 设置用户界面
+    /// 设置用户界面
     func setupUI() {
         playBtn.layer.cornerRadius = 6
         playBtn.layer.masksToBounds = true
@@ -71,8 +71,8 @@ class ViewController: UIViewController {
             fftTap = FFTTap(player) { [weak self] fftData in
                 guard let self = self else { return }
                 let magnitudes = self.calculateMagnitudes(from: fftData)
-                // 生成随机幅度数据
-                // let magnitudes: [Float] = (0..<self.spectrumView.numberOfBars).map { _ in Float.random(in: 0...1) }
+                /// 生成随机幅度数据
+                /// let magnitudes: [Float] = (0..<self.spectrumView.numberOfBars).map { _ in Float.random(in: 0...1) }
                 DispatchQueue.main.async {
                     self.spectrumView.magnitudes = magnitudes
                 }
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
         }
     }
         
-    // 启动音频引擎并播放
+    /// 启动音频引擎并播放
     func startAudio() {
         do {
             try engine.start()
@@ -115,15 +115,9 @@ class ViewController: UIViewController {
         stop()
     }
     
-    // 从FFT数据计算振幅
-    func calculateAmplitude(from fftData: [Float]) -> Float {
-        let sumOfSquares = fftData.reduce(0) { $0 + $1 * $1 } // 求平方和
-        return sqrt(sumOfSquares / Float(fftData.count)) // 计算均方根
-    }
-    
     // MARK: - 计算FFT数据
 
-    // 将 FFT 数据转换为幅度数组
+    /// 将 FFT 数据转换为幅度数组
     func calculateMagnitudes(from fftData: [Float]) -> [Float] {
         let fftData = applyHannWindow(fftData)
         /// 计算每个频点振幅平方
@@ -143,19 +137,19 @@ class ViewController: UIViewController {
         let fftSize = fftData.count
         let halfSize = fftSize / 2
         var magnitudes = [Float](repeating: 0.0, count: halfSize)
-        // 使用 UnsafeBufferPointer 直接引用 fftData，避免内存复制
+        /// 使用 UnsafeBufferPointer 直接引用 fftData，避免内存复制
         fftData.withUnsafeBufferPointer { fftBuffer in
             guard fftBuffer.count >= fftSize else {
                 return
             }
                 
-            // 创建 DSPSplitComplex，指向 fftData 的实部和虚部
+            /// 创建 DSPSplitComplex，指向 fftData 的实部和虚部
             var splitComplex = DSPSplitComplex(
                 realp: UnsafeMutablePointer(mutating: fftBuffer.baseAddress!),
                 imagp: UnsafeMutablePointer(mutating: fftBuffer.baseAddress! + 1)
             )
                 
-            // 计算幅度平方，stride 设置为 1，因为实部和虚部交错存储
+            /// 计算幅度平方，stride 设置为 1，因为实部和虚部交错存储
             vDSP_zvmags(&splitComplex, 1, &magnitudes, 1, vDSP_Length(halfSize))
         }
        

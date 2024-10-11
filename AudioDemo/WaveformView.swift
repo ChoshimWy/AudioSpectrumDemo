@@ -10,7 +10,8 @@ import UIKit
 class WaveformView: UIView {
     private let shapeLayer = CAShapeLayer()
     private var wavePoints: [CGPoint] = []
-    private var maxPoints: CGFloat = 200 // 显示的最大点数
+    /// 显示的最大点数
+    private var maxPoints: CGFloat = 200
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +30,7 @@ class WaveformView: UIView {
         self.layer.addSublayer(shapeLayer)
     }
     
-    // 更新波形图
+    /// 更新波形图
     func update(with amplitude: Float) {
         let normalizedAmplitude = CGFloat(amplitude) * self.bounds.height
         let xScale = self.bounds.size.width / maxPoints
@@ -37,10 +38,10 @@ class WaveformView: UIView {
             wavePoints.removeAll()
         }
         
-        // 将新振幅值添加为波形点
+        /// 将新振幅值添加为波形点
         wavePoints.append(CGPoint(x: xScale * CGFloat(wavePoints.count), y: self.bounds.midY - normalizedAmplitude / 2))
         
-        // 创建路径绘制波形
+        /// 创建路径绘制波形
         let path = UIBezierPath()
         for (index, point) in wavePoints.enumerated() {
             if index == 0 {
@@ -50,7 +51,7 @@ class WaveformView: UIView {
             }
         }
         
-        // 设置路径
+        /// 设置路径
         shapeLayer.path = path.cgPath
     }
 }
