@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BCF3660BA87CD929A6AF0DE /* Pods_AudioDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012C8CB6AC222FB9528B2A51 /* Pods_AudioDemo.framework */; };
+		84072FF12CB7EE1900E78C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84072FE82CB7EE1900E78C6A /* Assets.xcassets */; };
+		84072FF32CB7EE1900E78C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84072FEB2CB7EE1900E78C6A /* LaunchScreen.storyboard */; };
+		84072FF42CB7EE1900E78C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84072FED2CB7EE1900E78C6A /* Main.storyboard */; };
+		84072FF52CB7EE1900E78C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84072FE72CB7EE1900E78C6A /* AppDelegate.swift */; };
+		84072FF62CB7EE1900E78C6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84072FEE2CB7EE1900E78C6A /* SceneDelegate.swift */; };
+		84072FF72CB7EE1900E78C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84072FEF2CB7EE1900E78C6A /* ViewController.swift */; };
+		84072FF92CB7EFE800E78C6A /* Tuesday (Radio Edit).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84072FF82CB7EFE800E78C6A /* Tuesday (Radio Edit).mp3 */; };
+		84072FFB2CB8016800E78C6A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84072FFA2CB8016800E78C6A /* music.mp3 */; };
+		8439ED612CB8DBE0001D99F2 /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439ED602CB8DBE0001D99F2 /* SpectrumView.swift */; };
+		8439ED632CB916D7001D99F2 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439ED622CB916D7001D99F2 /* WaveformView.swift */; };
+		8439ED652CB9283E001D99F2 /* ScreenRecording_10-11-2024 18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8439ED642CB9283E001D99F2 /* ScreenRecording_10-11-2024 18.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012C8CB6AC222FB9528B2A51 /* Pods_AudioDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9EF7D1041B663D63D1A257 /* Pods-AudioDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioDemo/Pods-AudioDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		84072FCF2CB7D5CD00E78C6A /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84072FE72CB7EE1900E78C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84072FE82CB7EE1900E78C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84072FE92CB7EE1900E78C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84072FEA2CB7EE1900E78C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84072FEC2CB7EE1900E78C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84072FEE2CB7EE1900E78C6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84072FEF2CB7EE1900E78C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84072FF82CB7EFE800E78C6A /* Tuesday (Radio Edit).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tuesday (Radio Edit).mp3"; sourceTree = "<group>"; };
+		84072FFA2CB8016800E78C6A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		8439ED602CB8DBE0001D99F2 /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
+		8439ED622CB916D7001D99F2 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		8439ED642CB9283E001D99F2 /* ScreenRecording_10-11-2024 18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ScreenRecording_10-11-2024 18.gif"; sourceTree = "<group>"; };
+		FA12D80A5BE4483EBE0B84E3 /* Pods-AudioDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioDemo.release.xcconfig"; path = "Target Support Files/Pods-AudioDemo/Pods-AudioDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84072FCC2CB7D5CD00E78C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCF3660BA87CD929A6AF0DE /* Pods_AudioDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48CF1AA2036119947F9909B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012C8CB6AC222FB9528B2A51 /* Pods_AudioDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84072FC62CB7D5CD00E78C6A = {
+			isa = PBXGroup;
+			children = (
+				84072FF02CB7EE1900E78C6A /* AudioDemo */,
+				84072FD02CB7D5CD00E78C6A /* Products */,
+				FD9C1A714630A0E40A27772D /* Pods */,
+				48CF1AA2036119947F9909B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84072FD02CB7D5CD00E78C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84072FCF2CB7D5CD00E78C6A /* AudioDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84072FF02CB7EE1900E78C6A /* AudioDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84072FFA2CB8016800E78C6A /* music.mp3 */,
+				84072FF82CB7EFE800E78C6A /* Tuesday (Radio Edit).mp3 */,
+				8439ED642CB9283E001D99F2 /* ScreenRecording_10-11-2024 18.gif */,
+				84072FE72CB7EE1900E78C6A /* AppDelegate.swift */,
+				84072FE82CB7EE1900E78C6A /* Assets.xcassets */,
+				84072FE92CB7EE1900E78C6A /* Info.plist */,
+				84072FEB2CB7EE1900E78C6A /* LaunchScreen.storyboard */,
+				84072FED2CB7EE1900E78C6A /* Main.storyboard */,
+				84072FEE2CB7EE1900E78C6A /* SceneDelegate.swift */,
+				84072FEF2CB7EE1900E78C6A /* ViewController.swift */,
+				8439ED622CB916D7001D99F2 /* WaveformView.swift */,
+				8439ED602CB8DBE0001D99F2 /* SpectrumView.swift */,
+			);
+			path = AudioDemo;
+			sourceTree = "<group>";
+		};
+		FD9C1A714630A0E40A27772D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9EF7D1041B663D63D1A257 /* Pods-AudioDemo.debug.xcconfig */,
+				FA12D80A5BE4483EBE0B84E3 /* Pods-AudioDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84072FCE2CB7D5CD00E78C6A /* AudioDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84072FE22CB7D5D000E78C6A /* Build configuration list for PBXNativeTarget "AudioDemo" */;
+			buildPhases = (
+				CCD8EDE2713C9EC9AEBF95AB /* [CP] Check Pods Manifest.lock */,
+				84072FCB2CB7D5CD00E78C6A /* Sources */,
+				84072FCC2CB7D5CD00E78C6A /* Frameworks */,
+				84072FCD2CB7D5CD00E78C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioDemo;
+			productName = AudioDemo;
+			productReference = 84072FCF2CB7D5CD00E78C6A /* AudioDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84072FC72CB7D5CD00E78C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					84072FCE2CB7D5CD00E78C6A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 84072FCA2CB7D5CD00E78C6A /* Build configuration list for PBXProject "AudioDemo" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84072FC62CB7D5CD00E78C6A;
+			productRefGroup = 84072FD02CB7D5CD00E78C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84072FCE2CB7D5CD00E78C6A /* AudioDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84072FCD2CB7D5CD00E78C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84072FFB2CB8016800E78C6A /* music.mp3 in Resources */,
+				84072FF12CB7EE1900E78C6A /* Assets.xcassets in Resources */,
+				84072FF32CB7EE1900E78C6A /* LaunchScreen.storyboard in Resources */,
+				84072FF42CB7EE1900E78C6A /* Main.storyboard in Resources */,
+				84072FF92CB7EFE800E78C6A /* Tuesday (Radio Edit).mp3 in Resources */,
+				8439ED652CB9283E001D99F2 /* ScreenRecording_10-11-2024 18.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCD8EDE2713C9EC9AEBF95AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84072FCB2CB7D5CD00E78C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84072FF52CB7EE1900E78C6A /* AppDelegate.swift in Sources */,
+				84072FF62CB7EE1900E78C6A /* SceneDelegate.swift in Sources */,
+				8439ED632CB916D7001D99F2 /* WaveformView.swift in Sources */,
+				84072FF72CB7EE1900E78C6A /* ViewController.swift in Sources */,
+				8439ED612CB8DBE0001D99F2 /* SpectrumView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84072FEB2CB7EE1900E78C6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84072FEA2CB7EE1900E78C6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84072FED2CB7EE1900E78C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84072FEC2CB7EE1900E78C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84072FE32CB7D5D000E78C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9EF7D1041B663D63D1A257 /* Pods-AudioDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP3H66JF79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidus.link.AudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84072FE42CB7D5D000E78C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA12D80A5BE4483EBE0B84E3 /* Pods-AudioDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP3H66JF79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidus.link.AudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84072FE52CB7D5D000E78C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		84072FE62CB7D5D000E78C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84072FCA2CB7D5CD00E78C6A /* Build configuration list for PBXProject "AudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84072FE52CB7D5D000E78C6A /* Debug */,
+				84072FE62CB7D5D000E78C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84072FE22CB7D5D000E78C6A /* Build configuration list for PBXNativeTarget "AudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84072FE32CB7D5D000E78C6A /* Debug */,
+				84072FE42CB7D5D000E78C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84072FC72CB7D5CD00E78C6A /* Project object */;
+}
